@@ -12,6 +12,8 @@ public class FeaturesApplication {
 		SpringApplication.run(FeaturesApplication.class, args);
 		AddCalculation calculation = name -> name.toUpperCase() + " KODURU";
 		System.out.println(new UserDetails().getUserFullName("Madhusudhanarao", calculation));
+
+		System.out.println(new UserDetails().message().adding("Madhu"));
 	}
 
 }
